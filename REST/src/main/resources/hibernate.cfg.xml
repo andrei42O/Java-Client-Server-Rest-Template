@@ -21,5 +21,8 @@
 
 
         <mapping resource="model/User.hbm.xml"/>
+        <mapping resource="model/GameConfiguration.hbm.xml"/>
+        <mapping resource="model/Result.hbm.xml"/>
+
     </session-factory>
 </hibernate-configuration>

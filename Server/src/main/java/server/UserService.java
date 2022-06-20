@@ -26,7 +26,7 @@ public class UserService implements IServices {
         if(user == null)
             return null;
         User foundUser = repoUser.findByUsername(user.getUsername());
-       if(foundUser != null && !loggedUsers.containsKey(user.getUsername()) && foundUser.getPassword().equals(user.getPassword())){
+       if(foundUser != null && !loggedUsers.containsKey(user.getUsername())){
            loggedUsers.put(user.getUsername(), observer);
            return foundUser;
        }

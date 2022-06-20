@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="model">
+    <class name="GameConfiguration"
+           table="game_configuration">
+        <id name="ID" type="java.lang.Long" column="id">
+            <generator class="increment"/>
+        </id>
+        <property name="pos1"
+                  type="java.lang.Integer"
+                  column="pos1"/>
+        <property name="pos2"
+                  type="java.lang.Integer"
+                  column="pos2"/>
+        <property name="pos3"
+                  type="java.lang.Integer"
+                  column="pos3"/>
+        <property name="pos4"
+                  type="java.lang.Integer"
+                  column="pos4"/>
+        <property name="pos5"
+                  type="java.lang.Integer"
+                  column="pos5"/>
+    </class>
+</hibernate-mapping>

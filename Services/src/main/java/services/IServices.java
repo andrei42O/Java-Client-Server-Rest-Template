@@ -1,5 +1,6 @@
 package services;
 
+import model.GameConfiguration;
 import model.User;
 
 public interface IServices {

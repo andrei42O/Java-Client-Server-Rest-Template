@@ -1,5 +1,6 @@
 package objprotocol;
 
+import model.GameConfiguration;
 import model.User;
 import objprotocol.Requests.LoginRequest;
 import objprotocol.Requests.LogoutRequest;
@@ -58,6 +59,7 @@ public class ObjectProxy implements IServices {
         }
         closeConnection();
     }
+
 
     private void closeConnection() {
         finished = true;

@@ -66,9 +66,7 @@ public class RepositoryORMUser implements IRepositoryORMUser{
             try {
                 tx = session.beginTransaction();
                 User user = session.get(User.class, id);
-                user.setName(elem.getName());
                 user.setUsername(elem.getUsername());
-                user.setPassword(elem.getPassword());
                 session.update(user);
                 tx.commit();
                 return user;

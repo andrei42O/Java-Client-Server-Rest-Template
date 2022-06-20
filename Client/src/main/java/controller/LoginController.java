@@ -90,7 +90,7 @@ public class LoginController implements IController {
     private User loginUser() throws ServiceException {
         String username = usernameInput.getText();
         String password = Utils.hashPassword(passwordInput.getText());
-        User user = service.login(new User(username, password), mainController);
+        User user = service.login(new User(username), mainController);
         if(user == null)
             throw new ServiceException("The credentials do not match");
         return user;
